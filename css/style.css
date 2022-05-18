@@ -1,0 +1,114 @@
+#box {
+  width: 600px;
+  height: 550px;
+  border: 5px solid black;
+  margin: auto;
+  background-image: url(/img/869.jpg);
+  overflow: hidden;
+}
+
+#score {
+  width: 600px;
+  position: static top;
+  height: 30px;
+  top: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+}
+
+#tube1 {
+  top: 500px;
+  width: 60px;
+  height: 500px;
+  position: relative;
+  background-image: url(/img/toppng.com-french-baguette-916x8000.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 600px;
+  animation: tubes 1.5s infinite linear;
+}
+
+#tube2 {
+  width: 60px;
+  height: 500px;
+  position: relative;
+  background-image: url(/img/toppng.com-french-baguette-916x8000.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 600px;
+  animation: tubes 1.5s infinite linear;
+}
+
+@keyframes tubes {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: -70px;
+  }
+
+}
+
+@keyframes birdie {
+  0%{
+    transform: rotate(-45deg);
+  }
+  100%{
+    transform: rotate(60deg);
+  }
+}
+
+#bird {
+  background-image: url(/img/pngfind.com-flying-birds-clipart-png-6424549.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 300px;
+  animation: birdie 1.2s  linear;
+  animation-fill-mode: forwards;
+}
+
+#scoreboard{
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  margin-top: -1000px;
+  margin-left: 100px;
+  display: none;
+
+}
+
+#play{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: red;
+  transition-duration: 0.3s;
+
+}
+
+#play:hover{
+  transform: scale(1.03);
+  transition-duration: 0.3s;
+}
+
+#play:active{
+  transform: scale(1);
+  transition-duration: 0.3s;
+}
+
+#score2{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#bord{
+  width: 100px;
+  height: auto;
+}
+
